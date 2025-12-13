@@ -38,8 +38,7 @@
     'website': 'https://www.alhodood.com',
     'author': 'Alhodood Technologies',
     'depends': [
-        'hr_payroll_community',
-    ],
+        'hr_payroll_community',],
     'data': [
         'data/hr_contract_expiry_data.xml',
     ],

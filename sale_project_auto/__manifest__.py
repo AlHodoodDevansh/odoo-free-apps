@@ -35,6 +35,7 @@
         'views/project_views.xml'
     ],
     'assets': {},
+    'images': ['static/description/banner.gif'],
     'license': 'AGPL-3',
     'installable': True,
     'auto_install': False,

@@ -1,0 +1,20 @@
+<odoo>
+    <record id="view_order_form_inherit_project_auto" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.project.auto</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook" position="before">
+                <group string="Sale Project Auto" >
+                    <group>
+                        <field name="create_project_on_confirm" readonly="state in ['sale', 'cancel']"/>
+                        <field name="project_name" invisible="not create_project_on_confirm" required="create_project_on_confirm" readonly="state in ['sale', 'cancel']"/>
+                    </group>
+                    <group>
+                        <field name="project_id" readonly="1"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

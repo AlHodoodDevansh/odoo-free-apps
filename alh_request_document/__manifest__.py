@@ -46,7 +46,7 @@
         'views/request_document.xml',
         'wizard/reject_reason.xml',
     ],
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/banner.gif'],
     'assets': {},
     # 'price': 5.0,
     # 'currency': 'USD',
